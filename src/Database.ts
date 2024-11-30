@@ -8,7 +8,7 @@ export class Database {
 
   public get db(): Promise<Deno.Kv> {
     if (this._db === undefined) {
-      this._db = Deno.openKv("db/internal")
+      this._db = Deno.openKv()
     }
     return this._db
   }
