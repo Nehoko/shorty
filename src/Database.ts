@@ -52,6 +52,8 @@ export class Database {
 
   private async refresh(entry: Deno.KvEntryMaybe<string>): Promise<void> {
     const db = await this.db
-    await db.set(entry.key, entry.value, {expireIn: Date.now() + Database.MAX_LIFETIME})
+    await db.set(entry.key, entry.value, {
+      expireIn: Date.now() + Database.MAX_LIFETIME,
+    })
   }
 }

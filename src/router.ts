@@ -7,7 +7,7 @@ export const initRouter = async () => {
   const router = new Router()
 
   router.get("/", (context) => {
-    context.response.body = "Hello world!"
+    context.response.body = "Hello from Shorty!"
   })
   router.get("/:key", async (context) => {
     const key = context?.params?.key
