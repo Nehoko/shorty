@@ -37,5 +37,3 @@ jobs:
           project: "nehoko-shorty"
           entrypoint: "main.ts"
           root: ""
-          
-          
